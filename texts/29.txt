@@ -1,0 +1,18 @@
+[
+xmin -244
+ymin -38
+xmax 1838
+ymax 650
+translatex -255
+][
+font 28
+height 280
+letterspacing 70
+color #aeff5e
+x 200
+y 240
+]マネーボット[
+letterspacing 70
+x 0
+y 600
+]本部をスクープ!

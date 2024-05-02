@@ -1,0 +1,17 @@
+[
+xmin -226
+ymin -38
+xmax 1812
+ymax 647
+translatex -250
+][
+font 28
+height 280
+letterspacing 82
+color #aeff5e
+y 240
+]セルボット本部[
+letterspacing 82
+x 300
+y 600
+]体験ツアー

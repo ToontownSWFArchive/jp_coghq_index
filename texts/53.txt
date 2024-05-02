@@ -1,0 +1,18 @@
+[
+xmin -89
+ymin -38
+xmax 1657
+ymax 650
+translatex -100
+][
+font 28
+height 280
+letterspacing 82
+color #aeff5e
+x 160
+y 240
+]セルボット[
+letterspacing 82
+x 0
+y 600
+]本部のヒミツ

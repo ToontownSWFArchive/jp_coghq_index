@@ -1,0 +1,18 @@
+[
+xmin -372
+ymin -39
+xmax 1982
+ymax 650
+translatex -399
+][
+font 28
+height 280
+letterspacing 70
+color #aeff5e
+x 580
+y 240
+]スクープ![
+letterspacing 70
+x 0
+y 600
+]あらたなコグ本部!

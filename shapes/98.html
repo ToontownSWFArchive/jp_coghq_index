@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="48" height="85" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+function shape98(ctx,ctrans,frame,ratio,time){
+	var pathData="M 371 -523 L 471 -523 471 581 475 596 443 640 432 658 429 662 423 669 413 678 Q 98 694 -215 676 L -298 670 -406 652 Q -458 641 -483 591 L -483 590 -480 578 -480 -422 -481 -424 -478 -444 -467 -518 -380 -522 371 -522 371 -523";
+	ctx.fillStyle=tocolor(ctrans.apply([61,125,184,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 446 -588 L 480 -601 480 601 397 645 18 656 Q -214 655 -447 600 L -447 598 -404 548 -403 549 Q -170 604 62 605 254 605 446 567 L 446 -588";
+	ctx.fillStyle=tocolor(ctrans.apply([204,204,204,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M -375 -591 L -375 -600 -369 -598 Q 19 -476 446 -623 L 446 -588 446 567 Q 254 605 62 605 -170 604 -403 549 L -375 -591";
+	ctx.fillStyle=tocolor(ctrans.apply([221,221,221,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M -447 598 L -419 -549 -415 -547 -375 -591 -403 549 -404 548 -447 598";
+	ctx.fillStyle=tocolor(ctrans.apply([234,234,234,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M -344 -672 Q 39 -513 447 -623 L 447 566 80 587 Q -147 576 -378 509 L -350 -675 -344 -672";
+	ctx.fillStyle=tocolor(ctrans.apply([255,255,255,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 480 -600 L 480 600 Q 50 620 -327 495 L -327 -705 Q 110 -535 480 -600";
+	ctx.fillStyle=tocolor(ctrans.apply([221,221,221,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 481 -601 L 481 599 Q 88 555 -269 391 L -269 -809 Q 195 -534 481 -601";
+	ctx.fillStyle=tocolor(ctrans.apply([255,255,255,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 481 -600 L 481 600 Q 120 484 -184 274 L -184 -926 Q 129 -610 481 -600";
+	ctx.fillStyle=tocolor(ctrans.apply([204,204,204,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 373 680 L 392 674 403 661 423 645 Q 436 638 438 625 444 579 456 533 L 472 536 Q 481 560 479 612 476 664 373 680";
+	ctx.fillStyle=tocolor(ctrans.apply([61,125,184,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 453 -621 L 481 -600 481 600 450 577 453 -621";
+	ctx.fillStyle=tocolor(ctrans.apply([61,125,184,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 450 577 L 446 574 -52 196 Q -115 149 -114 49 L -114 -951 Q -115 -1052 -52 -1004 L 418 -647 418 -648 453 -621 450 577";
+	ctx.fillStyle=tocolor(ctrans.apply([111,185,215,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+var originalWidth=48;
+var originalHeight=85;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape98",canvas,ctx,[0.05,0.0,0.0,0.05,24.15,50.95],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

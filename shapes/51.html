@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="170" height="56" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+function shape51(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 62 L 3220 2 3400 1022 40 1122 0 62";
+	ctx.fillStyle=tocolor(ctrans.apply([51,51,51,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 79 122 L 3159 62 3339 962 119 1062 79 122";
+	var grd=ctx.createLinearGradient(1709.0,62.25,1709.0,1061.75);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([162,167,35,1])));
+	grd.addColorStop(0.0,tocolor(ctrans.apply([255,111,0,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([255,225,124,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 3159 62 L 3079 142 169 212 79 122 3159 62";
+	var grd=ctx.createLinearGradient(1619.0,212.0,1619.0,62.0);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([162,167,35,1])));
+	grd.addColorStop(0.0,tocolor(ctrans.apply([255,111,0,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([255,225,124,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 3080 142 L 3160 62 3340 962 3230 852 3080 142";
+	var grd=ctx.createLinearGradient(3210.0,962.0,3210.0,62.0);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([162,167,35,1])));
+	grd.addColorStop(0.0,tocolor(ctrans.apply([255,111,0,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([255,225,124,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 3229 852 L 3339 962 119 1062 219 962 3229 852";
+	var grd=ctx.createLinearGradient(1729.0,1061.75,1729.0,852.25);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([162,167,35,1])));
+	grd.addColorStop(0.0,tocolor(ctrans.apply([255,111,0,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([255,225,124,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 219 962 L 119 1062 79 122 169 212 219 962";
+	var grd=ctx.createLinearGradient(149.0,1061.75,149.0,122.25);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([162,167,35,1])));
+	grd.addColorStop(0.0,tocolor(ctrans.apply([255,111,0,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([255,225,124,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 3070 770 L 310 870 290 330 2970 210 3070 770";
+	ctx.fillStyle=tocolor(ctrans.apply([255,0,0,0.3019608]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+var originalWidth=170;
+var originalHeight=56;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape51",canvas,ctx,[0.05,0.0,0.0,0.05,0.0,-0.1],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>
